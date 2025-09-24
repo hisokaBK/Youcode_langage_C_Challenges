@@ -12,7 +12,9 @@ int main(){
         printf("tab[%d] <-- ",i);
         scanf("%d",&tab[i]);
        }
-        int val;
+
+       int val;
+
        printf("entrez la valeur bour le change : ");
        scanf("%d",&val);
 
