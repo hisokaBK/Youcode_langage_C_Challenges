@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define stock_max_de_librairie 100;
+#define stock_max_de_librairie 100
 
 int main(){
     
@@ -25,14 +25,14 @@ int main(){
     int  nombre_liver_en_stock=0;
 
 
-    int choi;
+    char choi;
     printf("bonjour Voici le menu  : \n1 ----> Ajouter un livre au stock .\n2 ----> Afficher tous les livres disponibles .\n3 ----> Rechercher un livre par son titre .\n4 ----> Mettre a jour la quantite d'un livre .\n5 ----> Supprimer un livre du stock .\n6 ----> Afficher le nombre total de livres en stock . \n7> --->Sortie \n==> {Chaque nombre represente une fonction }!!!!\n==>");
 
-    scanf("%d",&choi);
+    scanf("%c",&choi);
 
-    while(choi!=7){
+    while(choi!='7'){
          switch(choi){
-            case 1:
+            case '1':
                 
                 printf("entrez le titre de livre : ");
                 scanf("%s",name_liv);
@@ -68,11 +68,11 @@ int main(){
                 
                 printf("\nbonjour Voici le menu  \n: \n1 ----> Ajouter un livre au stock .\n2 ----> Afficher tous les livres disponibles .\n3 ----> Rechercher un livre par son titre .\n4 ----> Mettre a jour la quantite d'un livre .\n5 ----> Supprimer un livre du stock .\n6 ----> Afficher le nombre total de livres en stock . \n7> --->Sortie \n==> {Chaque nombre represente une fonction }!!!!\n==>");
     
-                scanf("%d",&choi);
+                scanf("%c",&choi);
 
                 break;
 
-            case 2:
+            case '2':
 
                 if(size!=-1){
                      printf("voici touts les  livres : \n");
@@ -85,11 +85,11 @@ int main(){
                 
                 printf("\nbonjour Voici le menu  : \n1 ----> Ajouter un livre au stock .\n2 ----> Afficher tous les livres disponibles .\n3 ----> Rechercher un livre par son titre .\n4 ----> Mettre a jour la quantite d'un livre .\n5 ----> Supprimer un livre du stock .\n6 ----> Afficher le nombre total de livres en stock . \n7> --->Sortie \n==> {Chaque nombre represente une fonction }!!!!\n==>");
     
-                scanf("%d",&choi);
+                scanf("%c",&choi);
 
                 break;
             
-            case 3: 
+            case '3': 
                 printf("entrez le nom du live pour fair la rechercher : ");
                 scanf(" %s",rechercher);
 
@@ -108,10 +108,10 @@ int main(){
 
                 printf("\nbonjour Voici le menu  : \n1 ----> Ajouter un livre au stock .\n2 ----> Afficher tous les livres disponibles .\n3 ----> Rechercher un livre par son titre .\n4 ----> Mettre a jour la quantite d'un livre .\n5 ----> Supprimer un livre du stock .\n6 ----> Afficher le nombre total de livres en stock . \n7> --->Sortie \n==> {Chaque nombre represente une fonction }!!!!\n==>");
     
-                scanf("%d",&choi);
+                scanf("%c",&choi);
                 break ;
 
-            case 4:
+            case '4':
                 printf("entrez le nom du live pour fair la Mettre a jour la quantite : ");
                 scanf(" %s",rechercher);
 
@@ -134,10 +134,10 @@ int main(){
 
                 printf("\nbonjour Voici le menu  : \n1 ----> Ajouter un livre au stock .\n2 ----> Afficher tous les livres disponibles .\n3 ----> Rechercher un livre par son titre .\n4 ----> Mettre a jour la quantite d'un livre .\n5 ----> Supprimer un livre du stock .\n6 ----> Afficher le nombre total de livres en stock . \n7> --->Sortie \n==> {Chaque nombre represente une fonction }!!!!\n==>");
     
-                scanf("%d",&choi);
+                scanf("%c",&choi);
                 break ;
             
-            case 5:
+            case '5':
 
                 printf("entrez le nom du live pour fair la supprition : ");
                 scanf(" %s",rechercher);
@@ -168,10 +168,10 @@ int main(){
 
                 printf("\nbonjour Voici le menu  : \n1 ----> Ajouter un livre au stock .\n2 ----> Afficher tous les livres disponibles .\n3 ----> Rechercher un livre par son titre .\n4 ----> Mettre a jour la quantite d'un livre .\n5 ----> Supprimer un livre du stock .\n6 ----> Afficher le nombre total de livres en stock . \n7> --->Sortie \n==> {Chaque nombre represente une fonction }!!!!\n==>");
     
-                scanf("%d",&choi);
+                scanf("%c",&choi);
                 break ;
  
-            case 6:
+            case '6':
                 for(int i=0;i<=size;i++){
                       if(quantite[i]>0){
                             nombre_liver_en_stock+=quantite[i];
@@ -183,14 +183,14 @@ int main(){
 
                 printf("\nbonjour Voici le menu  : \n1 ----> Ajouter un livre au stock .\n2 ----> Afficher tous les livres disponibles .\n3 ----> Rechercher un livre par son titre .\n4 ----> Mettre a jour la quantite d'un livre .\n5 ----> Supprimer un livre du stock .\n6 ----> Afficher le nombre total de livres en stock . \n7> --->Sortie \n==> {Chaque nombre represente une fonction }!!!!\n==>");
     
-                scanf("%d",&choi);
+                scanf("%c",&choi);
                 break ;
 
             default :
                    printf("\n ===> Erreur L'option n'est pas dans la liste !!? \n");
                    printf("\nbonjour Voici le menu  : \n1 ----> Ajouter un livre au stock .\n2 ----> Afficher tous les livres disponibles .\n3 ----> Rechercher un livre par son titre .\n4 ----> Mettre a jour la quantite d'un livre .\n5 ----> Supprimer un livre du stock .\n6 ----> Afficher le nombre total de livres en stock . \n7> --->Sortie \n==> {Chaque nombre represente une fonction }!!!!\n==>");
     
-                   scanf("%d",&choi);
+                   scanf("%c",&choi);
                    break;
         }
 
