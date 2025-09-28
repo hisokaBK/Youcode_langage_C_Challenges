@@ -1,33 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+int main() {
+    int min = 10, max = 50 , aleatoire;
 
-int main(){
+    srand(time(NULL)); 
 
-    
-    int tab[]={1,2,3,4,5};
-    int tab1[5] ;
-     
-    int s=0;
-    for (int i=0;i<5;i++){
-          for(int j=0;j<5;j++){
-               if(j==i){
-                  continue;
-               }
-               s+=tab[j];
-          }
-
-          tab1[i]=s;
-          s=0;
+    for(int i=0; i<5; i++) {
+       aleatoire = min + rand() % (max - min + 1);
+        printf("%d\n", aleatoire);
     }
-    
-    int max =tab1[0];
-    int min=tab1[0];
-
-    for(int i=0;i<5;i++){
-          printf("--->%d \n",tab1[i]);
-    }
-    
-    
 
     return 0;
 }
