@@ -1,26 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-struct rectangle {
-    float longueur;
-    float largeur;
-};
-
+#include <strings.h> // باش تستعمل strcasecmp (في Linux/Unix)
 
 int main() {
-    struct rectangle rec1[3];
+    // char s1[] = "Ab";
+    // char s2[] = "ac";
 
-    printf("Entrez la largeur du rectangle : ");
-    scanf("%f", &rec1[1].largeur);
+    // if (strcasecmp(s1, s2) > 0) {
+    //     printf("ac\n");
+    // } else {
+    //     printf("Ab\n");
+    // }
 
-    printf("Entrez la longueur du rectangle : ");
-    scanf("%f", &rec1[1].longueur);
-
-    struct rectangle *p=malloc(sizeof(rec1)*2);
-    
-    *p=rec1[1];
-
-    printf("L'aire du rectangle : %.2f\n",*(p->longueur) );
+    printf("%s",toUpperCase("aaaa"));
 
     return 0;
 }
